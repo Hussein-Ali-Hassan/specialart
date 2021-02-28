@@ -7428,6 +7428,10 @@ h1, .h1 {
   height: 100vh;
   margin-top: -60px; }
 
+@media screen and (max-width: 768px) {
+  .header-bg {
+    margin-top: -160px; } }
+
 @media screen and (max-width: 390px) {
   .header-bg {
     background-position: -485px; } }
@@ -7436,3 +7440,15 @@ h1, .h1 {
   font-size: 1.4rem;
   max-width: 400px;
   margin: 0 auto; }
+
+.carousel-wrapper {
+  max-width: 500px;
+  margin: 0 auto; }
+  .carousel-wrapper img {
+    height: 60vh;
+    object-fit: cover; }
+
+@media screen and (min-width: 700px) {
+  .carousel-wrapper img {
+    height: 600px;
+    object-fit: cover; } }
