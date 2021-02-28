@@ -2,6 +2,7 @@
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Open+Sans:wght@300;400&display=swap");
 
+// General Styles
 body {
     font-family: 'Open Sans', sans-serif;
     background-color: #fff;
@@ -16,6 +17,16 @@ h1 {
     max-width: 380px;
 }
 
+// nav
+.navbar-toggler {
+    border: 0;
+    
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+// header + bg
 .header-pg {
     max-width: 380px;
 }
@@ -26,11 +37,18 @@ h1 {
     background-position: center center;
     background-size: cover;
     height: 100vh;
-    margin-top: -50px;
+    margin-top: -60px;
 }
 
 @media screen and (max-width: 390px){
     .header-bg {
         background-position: -485px;
     }
+}
+
+// about
+.about-pg {
+    font-size: 1.4rem;
+    max-width: 400px;
+    margin: 0 auto;
 }

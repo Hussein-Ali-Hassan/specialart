@@ -7412,6 +7412,11 @@ h1, .h1 {
   font-size: 2.8rem;
   max-width: 380px; }
 
+.navbar-toggler {
+  border: 0; }
+  .navbar-toggler:focus {
+    box-shadow: none; }
+
 .header-pg {
   max-width: 380px; }
 
@@ -7421,8 +7426,13 @@ h1, .h1 {
   background-position: center center;
   background-size: cover;
   height: 100vh;
-  margin-top: -50px; }
+  margin-top: -60px; }
 
 @media screen and (max-width: 390px) {
   .header-bg {
     background-position: -485px; } }
+
+.about-pg {
+  font-size: 1.4rem;
+  max-width: 400px;
+  margin: 0 auto; }
