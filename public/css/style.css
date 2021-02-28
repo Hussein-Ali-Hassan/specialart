@@ -7402,11 +7402,11 @@ textarea.form-control-lg {
     display: none !important; } }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   background-color: #fff; }
 
 h1, .h1, h2, .h2, h3, .h3 {
-  font-family: 'Caveat', cursive; }
+  font-family: "Caveat", cursive; }
 
 h1, .h1 {
   font-size: 2.8rem;
@@ -7470,3 +7470,31 @@ h1, .h1 {
       margin-bottom: 5px; }
       .testi-wrapper .testi-content-header img {
         margin-top: -30px; }
+
+form {
+  margin: 3rem auto;
+  padding: 2.5rem 2rem;
+  max-width: 350px;
+  background-color: #fff;
+  border-radius: 8px; }
+
+@media screen and (min-width: 700px) {
+  form {
+    max-width: 480px; } }
+
+.footer-top {
+  display: flex;
+  justify-content: space-between; }
+  .footer-top i {
+    font-size: 1.4rem;
+    padding: 3px; }
+  .footer-top .fa-facebook-square {
+    color: #0f92f3; }
+  .footer-top .fa-instagram-square {
+    color: #d64c60; }
+  .footer-top .fa-twitter-square {
+    color: #2786cf; }
+  .footer-top .fa-linkedin {
+    color: #0f67aa; }
+  .footer-top .fa-envelope {
+    color: #c76030; }

@@ -1,109 +1,154 @@
-@import 'variables';  
-@import '../node_modules/bootstrap/scss/bootstrap.scss';
+@import "variables";
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Open+Sans:wght@300;400&display=swap");
 
 // General Styles
 body {
-    font-family: 'Open Sans', sans-serif;
-    background-color: #fff;
+  font-family: "Open Sans", sans-serif;
+  background-color: #fff;
 }
 
-h1,h2,h3 {
-    font-family: 'Caveat', cursive;
+h1,
+h2,
+h3 {
+  font-family: "Caveat", cursive;
 }
 
 h1 {
-    font-size: 2.8rem;
-    max-width: 380px;
+  font-size: 2.8rem;
+  max-width: 380px;
 }
 
 // nav
 .navbar-toggler {
-    border: 0;
-    
-    &:focus {
-        box-shadow: none;
-    }
+  border: 0;
+
+  &:focus {
+    box-shadow: none;
+  }
 }
 
 // header + bg
 .header-pg {
-    max-width: 380px;
+  max-width: 380px;
 }
 
 .header-bg {
-    background: url('../assests/header.svg');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    height: 100vh;
-    margin-top: -60px;
+  background: url("../assests/header.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+  margin-top: -60px;
 }
 
-@media screen and (max-width: 768px){
-    .header-bg {
+@media screen and (max-width: 768px) {
+  .header-bg {
     margin-top: -160px;
-    }
+  }
 }
 
-@media screen and (max-width: 390px){
-    .header-bg {
-        background-position: -485px;
-    }
+@media screen and (max-width: 390px) {
+  .header-bg {
+    background-position: -485px;
+  }
 }
 
 // about
 .about-pg {
-    font-size: 1.4rem;
-    max-width: 400px;
-    margin: 0 auto;
+  font-size: 1.4rem;
+  max-width: 400px;
+  margin: 0 auto;
 }
 
 // work
 .carousel-wrapper {
-    max-width: 500px;
-    margin: 0 auto;
+  max-width: 500px;
+  margin: 0 auto;
 
-    img {
-        height: 63vh;
-        object-fit: cover;
-    }
+  img {
+    height: 63vh;
+    object-fit: cover;
+  }
 }
 
-@media screen and (min-width: 700px){
-    .carousel-wrapper {
+@media screen and (min-width: 700px) {
+  .carousel-wrapper {
     img {
-        height: 600px;
-        object-fit: cover;
+      height: 600px;
+      object-fit: cover;
     }
-}
+  }
 }
 
 // Testimonials
 .testi-wrapper {
+  max-width: 480px;
+  padding: 1rem;
+  background-color: $light;
+  margin: 1rem 0;
+
+  .testi-inner {
+    display: flex;
+
+    img {
+      margin-right: 25px;
+    }
+  }
+
+  .testi-content {
+    text-align: left;
+    &-header {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 5px;
+
+      img {
+        margin-top: -30px;
+      }
+    }
+  }
+}
+
+// form
+form {
+  margin: 3rem auto;
+  padding: 2.5rem 2rem;
+  max-width: 350px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+@media screen and (min-width: 700px) {
+  form {
     max-width: 480px;
-    padding:1rem;
-    background-color: $light;
-    margin: 1rem 0;
+  }
+}
 
-    .testi-inner {
-        display: flex;
+//footer
+.footer {
+  &-top {
+    display: flex;
+    justify-content: space-between;
 
-        img {
-            margin-right: 25px;
-        }
+    i {
+      font-size: 1.4rem;
+      padding: 3px;
     }
-
-    .testi-content {
-        text-align: left;
-        &-header {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 5px;
-
-            img {
-                margin-top: -30px;
-            }
-        }
+    .fa-facebook-square {
+      color: #0f92f3;
     }
+    .fa-instagram-square {
+      color: #d64c60;
+    }
+    .fa-twitter-square {
+      color: #2786cf;
+    }
+    .fa-linkedin {
+      color: #0f67aa;
+    }
+    .fa-envelope {
+      color: #c76030;
+    }
+  }
 }
