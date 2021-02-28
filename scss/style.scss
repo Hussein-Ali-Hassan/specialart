@@ -130,6 +130,10 @@ form {
   &-top {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    img {
+        height: 28px;
+    }
 
     i {
       font-size: 1.4rem;
@@ -151,4 +155,31 @@ form {
       color: #c76030;
     }
   }
+}
+
+@media screen and (min-width: 700px){
+    .footer {
+      &-top {
+        i {
+          font-size: 2.5rem;
+          padding: 10px;
+        }
+        img {
+            height: 35px;
+        }
+    }
+
+    &-middle {
+        font-size: 1.2rem;
+    }
+
+    &-end {
+        text-align: center;
+        font-size: 1.2rem;
+    }
+    }
+
+
+
+
 }
