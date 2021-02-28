@@ -1,2 +1,35 @@
-@import 'variables'; 
+@import 'variables';  
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Open+Sans:wght@300;400&display=swap");
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #fff;
+}
+
+h1,h2,h3 {
+    font-family: 'Caveat', cursive;
+}
+
+h1 {
+    font-size: 2.8rem;
+    max-width: 380px;
+}
+
+.header-pg {
+    max-width: 380px;
+}
+
+.header-bg {
+    background: url('../assests/header.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+}
+
+@media screen and (max-width: 500px){
+    .header-bg {
+        background-position: -485px;
+    }
+}
