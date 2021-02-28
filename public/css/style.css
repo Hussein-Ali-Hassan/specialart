@@ -7445,10 +7445,28 @@ h1, .h1 {
   max-width: 500px;
   margin: 0 auto; }
   .carousel-wrapper img {
-    height: 60vh;
+    height: 63vh;
     object-fit: cover; }
 
 @media screen and (min-width: 700px) {
   .carousel-wrapper img {
     height: 600px;
     object-fit: cover; } }
+
+.testi-wrapper {
+  max-width: 480px;
+  padding: 1rem;
+  background-color: #EBF2F9;
+  margin: 1rem 0; }
+  .testi-wrapper .testi-inner {
+    display: flex; }
+    .testi-wrapper .testi-inner img {
+      margin-right: 25px; }
+  .testi-wrapper .testi-content {
+    text-align: left; }
+    .testi-wrapper .testi-content-header {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 5px; }
+      .testi-wrapper .testi-content-header img {
+        margin-top: -30px; }

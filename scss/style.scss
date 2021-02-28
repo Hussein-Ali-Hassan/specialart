@@ -65,7 +65,7 @@ h1 {
     margin: 0 auto;
 
     img {
-        height: 60vh;
+        height: 63vh;
         object-fit: cover;
     }
 }
@@ -77,4 +77,33 @@ h1 {
         object-fit: cover;
     }
 }
+}
+
+// Testimonials
+.testi-wrapper {
+    max-width: 480px;
+    padding:1rem;
+    background-color: $light;
+    margin: 1rem 0;
+
+    .testi-inner {
+        display: flex;
+
+        img {
+            margin-right: 25px;
+        }
+    }
+
+    .testi-content {
+        text-align: left;
+        &-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+
+            img {
+                margin-top: -30px;
+            }
+        }
+    }
 }
