@@ -26,9 +26,10 @@ h1 {
     background-position: center center;
     background-size: cover;
     height: 100vh;
+    margin-top: -50px;
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 390px){
     .header-bg {
         background-position: -485px;
     }
