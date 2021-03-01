@@ -1,0 +1,19 @@
+@import 'variables';
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+// nav
+.navbar-toggler {
+  border: 0;
+
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+.gallery {
+  width: 6000px;
+  img {
+    max-width: 350px;
+    margin: 8rem;
+  }
+}
