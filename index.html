@@ -10,6 +10,7 @@
       integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
       crossorigin="anonymous"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="public/css/style.css" />
     <title>GH.Special Art - Professional Portrait Arts</title>
   </head>
@@ -39,21 +40,21 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item text-center">
+            <li class="nav-item">
               <a class="nav-link text-dark" aria-current="page" href="#about"
                 >About Us</a
               >
             </li>
-            <li class="nav-item text-center">
+            <li class="nav-item">
               <a class="nav-link text-dark" href="#work">Our Work</a>
             </li>
-            <li class="nav-item text-center">
+            <li class="nav-item">
               <a class="nav-link text-dark" href="#pricing">Pricing</a>
             </li>
-            <li class="nav-item text-center">
+            <li class="nav-item">
               <a class="nav-link text-dark" href="#reviews">Reviews</a>
             </li>
-            <li class="nav-item text-center">
+            <li class="nav-item">
               <a class="nav-link text-dark" href="#form">Order</a>
             </li>
           </ul>
@@ -81,11 +82,13 @@
     <main id="main">
       <section id="about" class="bg-light text-center pb-3">
         <div class="container">
-          <h2 class="display-3 py-4">About Us</h2>
+          <div data-aos="fade-down">
+            <h2 class="display-3 py-4">About Us</h2>
+          </div>
           <div class="row">
             <div
               class="col-sm-6 d-flex flex-column justify-content-center mb-5"
-            >
+             data-aos="fade-right">
               <p class="about-pg">
                 Experienced Freelance Artist with a demonstrated history of
                 working in the arts and crafts industry. Skilled in Airbrush,
@@ -95,7 +98,8 @@
                 Arts
               </p>
             </div>
-            <div class="col-sm-6 mb-5">
+
+            <div class="col-sm-6 mb-5" data-aos="fade-left">
               <img
                 class="img-fluid"
                 src="public/assests/about.jpeg"
@@ -111,13 +115,14 @@
         <div class="container">
           <div class="row">
             <div class="col text-center">
+              <div data-aos="zoom-in-down">
               <h2 class="display-3 pt-4">Our Work</h2>
               <p class="mb-5">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Eligendi voluptatibus officia consequuntur?
               </p>
-
-              <div class="carousel-wrapper mb-5">
+</div>
+              <div class="carousel-wrapper mb-5" data-aos="zoom-in">
                 <div
                   id="carouselExampleDark"
                   class="carousel carousel-dark slide"
@@ -232,35 +237,39 @@
       <!-- Pricing -->
       <section class="bg-light py-5" id="pricing">
         <div class="container text-center">
+          <div data-aos="zoom-in-down">
           <h2 class="display-3">Pricing</h2>
           <p class="mb-5">Our Prices Depend on 2 factors: Size and Style</p>
-
-          <div class="card">
+</div>
+          <div class="card" data-aos="zoom-in">
             <img src="public/assests/card.png" class="card-img-top" alt="..." />
             <div class="card-body">
               <div class="size-boxes-container">
-              <div class="size-box" id="5070">50 x 70 cm</div>
-              <div class="size-box clicked" id="4050">40 x 50 cm</div>
-              <div class="size-box" id="3040">30 x 40 cm</div>
-            </div>
-            <small class="sizes-note text-muted pt-2 d-block">These sizes are our standards. But you can choose your own </small>
+                <div class="size-box" id="5070">50 x 70 cm</div>
+                <div class="size-box clicked" id="4050">40 x 50 cm</div>
+                <div class="size-box" id="3040">30 x 40 cm</div>
+              </div>
+              <small class="sizes-note text-muted pt-2 d-block"
+                >These sizes are our standards. But you can choose your own
+              </small>
               <hr />
               <div class="toggle-container">
-              <span>Black & White</span>
-              <input type="checkbox" id="style" class="toggle" />
-              <label for="style" class="label">
-                <div class="ball"></div>
-              </label>
-              <span class="me-3">Colored</span>
+                <span>Black & White</span>
+                <input type="checkbox" id="style" class="toggle" />
+                <label for="style" class="label">
+                  <div class="ball"></div>
+                </label>
+                <span class="me-3">Colored</span>
               </div>
-              
-              <hr>
-              
+
+              <hr />
+
               <div class="total-price">
                 Total Price: <span id="total">150 $ (CAD)</span>
               </div>
-              <small class=" total-note text-muted">* Delivery cost not included</small>
-              
+              <small class="total-note text-muted"
+                >* Delivery cost not included</small
+              >
             </div>
           </div>
         </div>
@@ -269,9 +278,11 @@
       <!-- Testimonials -->
       <section id="reviews">
         <div class="container text-center mb-5">
+          <div data-aos="fade-down">
           <h2 class="display-3 py-4">What Our Customers Say</h2>
+          </div>
           <div class="row">
-            <div class="col-sm-6">
+            <div class="col-sm-6" data-aos="fade-right">
               <div class="testi-wrapper">
                 <div class="testi-inner">
                   <img src="..." alt="..." class="testi-img" />
@@ -296,7 +307,7 @@
               </div>
             </div>
 
-            <div class="col-sm-6">
+            <div class="col-sm-6" data-aos="fade-left">
               <div class="testi-wrapper">
                 <div class="testi-inner">
                   <img src="..." alt="..." class="testi-img" />
@@ -321,7 +332,7 @@
               </div>
             </div>
 
-            <div class="col-sm-6">
+            <div class="col-sm-6" data-aos="fade-right">
               <div class="testi-wrapper">
                 <div class="testi-inner">
                   <img src="..." alt="..." class="testi-img" />
@@ -345,7 +356,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-6" data-aos="fade-left">
               <div class="testi-wrapper">
                 <div class="testi-inner">
                   <img src="..." alt="..." class="testi-img" />
@@ -369,7 +380,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-6" data-aos="fade-right">
               <div class="testi-wrapper">
                 <div class="testi-inner">
                   <img src="..." alt="..." class="testi-img" />
@@ -393,7 +404,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-6" data-aos="fade-left">
               <div class="testi-wrapper">
                 <div class="testi-inner">
                   <img src="..." alt="..." class="testi-img" />
@@ -424,9 +435,10 @@
       <!-- Form -->
       <section class="bg-light" id="form">
         <div class="container py-5">
+          <div data-aos="zoom-in-down">
           <h2 class="display-3 text-center">Order Your Portrait Now</h2>
-
-          <form>
+</div>
+          <form  data-aos="zoom-in">
             <div class="mb-4">
               <label for="name" class="form-label fw-bold">Name:</label>
               <input
@@ -525,6 +537,10 @@
       integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="public/js/script.js"></script>
   </body>
 </html>
