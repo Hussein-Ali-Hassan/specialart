@@ -11,9 +11,10 @@
 }
 
 .gallery {
-  width: 6000px;
+  width: 5500px;
   img {
-    max-width: 350px;
-    margin: 8rem;
+    max-width: 330px;
+    object-fit: cover;
+    margin: 5rem;
   }
 }
