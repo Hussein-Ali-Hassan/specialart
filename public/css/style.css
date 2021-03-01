@@ -7557,8 +7557,12 @@ h1, .h1 {
   margin: 1rem 0; }
   .testi-wrapper .testi-inner {
     display: flex; }
-    .testi-wrapper .testi-inner img {
-      margin-right: 25px; }
+    .testi-wrapper .testi-inner .testi-img {
+      margin-right: 25px;
+      width: 140px;
+      height: 70px;
+      object-fit: cover;
+      border-radius: 50%; }
   .testi-wrapper .testi-content {
     text-align: left; }
     .testi-wrapper .testi-content-header {
