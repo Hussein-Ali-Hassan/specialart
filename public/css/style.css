@@ -7453,6 +7453,103 @@ h1, .h1 {
     height: 600px;
     object-fit: cover; } }
 
+#pricing .card {
+  background-color: #d0e1f6;
+  max-width: 350px;
+  margin: auto; }
+
+#pricing .size-boxes-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+#pricing .size-box {
+  border: 1px solid #48ac27;
+  padding: 0.3rem 0.55rem;
+  cursor: pointer;
+  border-radius: 3px; }
+
+#pricing .sizes-note {
+  font-size: 0.7rem; }
+
+#pricing .size-box.clicked {
+  background-color: #48ac27; }
+
+#pricing .toggle-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0; }
+
+#pricing .toggle {
+  visibility: hidden; }
+
+#pricing .label {
+  background-color: #d0d0d0;
+  border-radius: 50px;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 15px 0;
+  width: 75px;
+  height: 35px;
+  position: relative; }
+
+#pricing .toggle:checked + .label {
+  background-color: #48ac27; }
+
+#pricing .ball {
+  background-color: #fff;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  align-items: center;
+  justify-content: center;
+  animation: slideOff 0.3s linear forwards; }
+
+#pricing .toggle:checked + .label .ball {
+  animation: slideOn 0.3s linear forwards; }
+
+@keyframes slideOn {
+  0% {
+    transform: translateX(0) scale(1); }
+  50% {
+    transform: translateX(20px) scale(1.2); }
+  100% {
+    transform: translateX(40px) scale(1); } }
+
+@keyframes slideOff {
+  0% {
+    transform: translateX(40px) scale(1); }
+  50% {
+    transform: translateX(20px) scale(1.2); }
+  100% {
+    transform: translateX(0) scale(1); } }
+
+#pricing .total-price {
+  border: #48ac27 1px solid;
+  padding: 0.5rem; }
+  #pricing .total-price #total {
+    margin-left: 40px;
+    font-weight: bold;
+    font-size: 1.2rem; }
+
+#pricing .total-note {
+  margin-left: -130px; }
+
+@media screen and (min-width: 700px) {
+  #pricing .card {
+    max-width: 450px; }
+  #pricing .size-box {
+    padding: 0.5rem 0.9rem;
+    font-size: 1.2rem; }
+  #pricing .sizes-note {
+    font-size: 0.9rem; }
+  #pricing .total-note {
+    margin-left: -230px; } }
+
 .testi-wrapper {
   max-width: 480px;
   padding: 1rem;
@@ -7491,6 +7588,8 @@ form {
   .footer-top i {
     font-size: 1.4rem;
     padding: 3px; }
+    .footer-top i:hover {
+      transform: scale(1.2); }
   .footer-top .fa-facebook-square {
     color: #0f92f3; }
   .footer-top .fa-instagram-square {

@@ -81,6 +81,141 @@ h1 {
   }
 }
 
+// pricing
+#pricing {
+  .card {
+    background-color: #d0e1f6;
+    max-width: 350px;
+    margin: auto;
+  }
+
+  // the size boxes
+  .size-boxes-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .size-box {
+    border: 1px solid #48ac27;
+    padding: 0.3rem 0.55rem;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+
+  .sizes-note {
+    font-size: 0.7rem;
+  }
+  .size-box.clicked {
+    background-color: #48ac27;
+  }
+
+  // the checkbox in pricing card
+
+  .toggle-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+  }
+
+  .toggle {
+    visibility: hidden;
+  }
+
+  .label {
+    background-color: #d0d0d0;
+    border-radius: 50px;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 15px 0;
+    width: 75px;
+    height: 35px;
+    position: relative;
+  }
+
+  .toggle:checked + .label {
+    background-color: #48ac27;
+  }
+
+  .ball {
+    background-color: #fff;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    align-items: center;
+    justify-content: center;
+    animation: slideOff 0.3s linear forwards;
+  }
+
+  .toggle:checked + .label .ball {
+    animation: slideOn 0.3s linear forwards;
+  }
+
+  @keyframes slideOn {
+    0% {
+      transform: translateX(0) scale(1);
+    }
+    50% {
+      transform: translateX(20px) scale(1.2);
+    }
+    100% {
+      transform: translateX(40px) scale(1);
+    }
+  }
+
+  @keyframes slideOff {
+    0% {
+      transform: translateX(40px) scale(1);
+    }
+    50% {
+      transform: translateX(20px) scale(1.2);
+    }
+    100% {
+      transform: translateX(0) scale(1);
+    }
+  }
+
+  // total price
+  .total-price {
+    border: #48ac27 1px solid;
+    padding: 0.5rem;
+
+    #total {
+      margin-left: 40px;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+  }
+
+  .total-note {
+    margin-left: -130px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  #pricing {
+    .card {
+      max-width: 450px;
+    }
+
+    .size-box {
+      padding: 0.5rem 0.9rem;
+      font-size: 1.2rem;
+    }
+
+    .sizes-note {
+      font-size: 0.9rem;
+    }
+
+    .total-note {
+      margin-left: -230px;
+    }
+  }
+}
+
 // Testimonials
 .testi-wrapper {
   max-width: 480px;
@@ -132,12 +267,15 @@ form {
     justify-content: space-between;
     align-items: center;
     img {
-        height: 28px;
+      height: 28px;
     }
 
     i {
       font-size: 1.4rem;
       padding: 3px;
+      &:hover {
+        transform: scale(1.2);
+      }
     }
     .fa-facebook-square {
       color: #0f92f3;
@@ -157,29 +295,25 @@ form {
   }
 }
 
-@media screen and (min-width: 700px){
-    .footer {
-      &-top {
-        i {
-          font-size: 2.5rem;
-          padding: 10px;
-        }
-        img {
-            height: 35px;
-        }
+@media screen and (min-width: 700px) {
+  .footer {
+    &-top {
+      i {
+        font-size: 2.5rem;
+        padding: 10px;
+      }
+      img {
+        height: 35px;
+      }
     }
 
     &-middle {
-        font-size: 1.2rem;
+      font-size: 1.2rem;
     }
 
     &-end {
-        text-align: center;
-        font-size: 1.2rem;
+      text-align: center;
+      font-size: 1.2rem;
     }
-    }
-
-
-
-
+  }
 }

@@ -53,6 +53,9 @@
             <li class="nav-item text-center">
               <a class="nav-link text-dark" href="#reviews">Reviews</a>
             </li>
+            <li class="nav-item text-center">
+              <a class="nav-link text-dark" href="#form">Order</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -65,7 +68,7 @@
         <p class="header-pg lead">
           Receive your awesome ‘Portrait Art’ at your door in a matter of days
         </p>
-        <a href="#" class="btn btn-primary mt-4" role="button"
+        <a href="#form" class="btn btn-primary mt-4" role="button"
           >Order Yours Now</a
         >
       </div>
@@ -221,6 +224,43 @@
               <a href="#" class="btn btn-outline-primary btn-lg mb-5"
                 >Check Our Gallery</a
               >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pricing -->
+      <section class="bg-light py-5" id="pricing">
+        <div class="container text-center">
+          <h2 class="display-3">Pricing</h2>
+          <p class="mb-5">Our Prices Depend on 2 factors: Size and Style</p>
+
+          <div class="card">
+            <img src="public/assests/card.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <div class="size-boxes-container">
+              <div class="size-box" id="5070">50 x 70 cm</div>
+              <div class="size-box clicked" id="4050">40 x 50 cm</div>
+              <div class="size-box" id="3040">30 x 40 cm</div>
+            </div>
+            <small class="sizes-note text-muted pt-2 d-block">These sizes are our standards. But you can choose your own </small>
+              <hr />
+              <div class="toggle-container">
+              <span>Black & White</span>
+              <input type="checkbox" id="style" class="toggle" />
+              <label for="style" class="label">
+                <div class="ball"></div>
+              </label>
+              <span class="me-3">Colored</span>
+              </div>
+              
+              <hr>
+              
+              <div class="total-price">
+                Total Price: <span id="total">150 $ (CAD)</span>
+              </div>
+              <small class=" total-note text-muted">* Delivery cost not included</small>
+              
             </div>
           </div>
         </div>
@@ -428,7 +468,7 @@
               <textarea
                 class="form-control"
                 id="message"
-                placeholder="Enter your request"
+                placeholder="Feel free to tell us what you want (size,style..)"
               ></textarea>
             </div>
 
@@ -444,16 +484,28 @@
         <div class="container">
           <div class="footer-top">
             <a href="#"
-              ><img
-                src="public/assests/GH.Special Art.svg"
-                alt="logo"
+              ><img src="public/assests/GH.Special Art.svg" alt="logo"
             /></a>
             <div class="icons">
-              <a href="https://www.facebook.com/gh.special.art" target="_blank"><i class="fab fa-facebook-square"></i></a>
-              <a href="https://www.instagram.com/special_art_in_canada/" target="_blank"><i class="fab fa-instagram-square"></i></a>
-              <a href="https://twitter.com/GHSpecialArt1" target="_blank"><i class="fab fa-twitter-square"></i></a>
-              <a href="https://www.linkedin.com/in/ghada-haidar-752b1476/" target="_blank"><i class="fab fa-linkedin"></i></a>
-              <a href="mailto:gh@specialart.design" target="_blank"><i class="fas fa-envelope"></i></a>
+              <a href="https://www.facebook.com/gh.special.art" target="_blank"
+                ><i class="fab fa-facebook-square"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/special_art_in_canada/"
+                target="_blank"
+                ><i class="fab fa-instagram-square"></i
+              ></a>
+              <a href="https://twitter.com/GHSpecialArt1" target="_blank"
+                ><i class="fab fa-twitter-square"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/ghada-haidar-752b1476/"
+                target="_blank"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a href="mailto:gh@specialart.design" target="_blank"
+                ><i class="fas fa-envelope"></i
+              ></a>
             </div>
           </div>
           <div class="footer-middle mt-3">
