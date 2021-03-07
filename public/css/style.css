@@ -7528,6 +7528,7 @@ h1, .h1 {
   background-color: #48ac27; }
 
 #pricing .ball {
+  display: block;
   background-color: #fff;
   height: 30px;
   width: 30px;
