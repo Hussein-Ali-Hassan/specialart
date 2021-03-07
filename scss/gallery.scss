@@ -13,8 +13,18 @@
 .gallery {
   width: 5500px;
   img {
-    max-width: 330px;
+    max-width: 310px;
     object-fit: cover;
-    margin: 5rem;
+    margin: 4.7rem;
+  }
+}
+
+@media screen and (min-width: 900px){
+  .gallery {
+    width: 100vw;
+
+    img {
+      margin: 4rem;
+    }
   }
 }

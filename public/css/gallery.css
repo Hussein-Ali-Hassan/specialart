@@ -7408,6 +7408,12 @@ textarea.form-control-lg {
 .gallery {
   width: 5500px; }
   .gallery img {
-    max-width: 330px;
+    max-width: 310px;
     object-fit: cover;
-    margin: 5rem; }
+    margin: 4.7rem; }
+
+@media screen and (min-width: 900px) {
+  .gallery {
+    width: 100vw; }
+    .gallery img {
+      margin: 4rem; } }
