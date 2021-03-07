@@ -7408,17 +7408,32 @@ body {
 h1, .h1, h2, .h2, h3, .h3 {
   font-family: "Caveat", cursive; }
 
-h1, .h1 {
-  font-size: 2.8rem;
-  max-width: 380px; }
-
 .navbar-toggler {
   border: 0; }
   .navbar-toggler:focus {
     box-shadow: none; }
 
-.header-pg {
+.nav-item {
+  margin-right: 10px;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.3s ease; }
+  .nav-item:hover {
+    border-color: #963484; }
+
+h1, .h1 {
+  font-size: 2.8rem;
   max-width: 380px; }
+
+@media screen and (min-width: 900px) {
+  #home h1, #home .h1 {
+    margin-top: 3rem;
+    max-width: 900px;
+    font-size: 3.8rem; }
+  .header-pg {
+    font-size: 1.42rem; } }
+
+.header-pg {
+  max-width: 55ch; }
 
 .header-bg {
   background: url("../assests/header.svg");
@@ -7445,7 +7460,7 @@ h1, .h1 {
   max-width: 500px;
   margin: 0 auto; }
   .carousel-wrapper img {
-    height: 63vh;
+    height: 66vh;
     object-fit: cover; }
 
 @media screen and (min-width: 700px) {

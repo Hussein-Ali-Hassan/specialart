@@ -12,6 +12,10 @@
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="public/css/style.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=2" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=2" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=2" />
+    <link rel="manifest" href="/site.webmanifest?v=2" />
     <title>GH.Special Art - Professional Portrait Arts</title>
   </head>
 
@@ -54,7 +58,7 @@
             <li class="nav-item">
               <a class="nav-link text-dark" href="#reviews">Reviews</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item d-sm-none d-block">
               <a class="nav-link text-dark" href="#form">Order</a>
             </li>
           </ul>
@@ -88,7 +92,8 @@
           <div class="row">
             <div
               class="col-sm-6 d-flex flex-column justify-content-center mb-5"
-             data-aos="zoom-in-up">
+              data-aos="zoom-in-up"
+            >
               <p class="about-pg">
                 Experienced Freelance Artist with a demonstrated history of
                 working in the arts and crafts industry. Skilled in Airbrush,
@@ -116,12 +121,12 @@
           <div class="row">
             <div class="col text-center">
               <div data-aos="zoom-in-down">
-              <h2 class="display-3 pt-4">Our Work</h2>
-              <p class="mb-5">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Eligendi voluptatibus officia consequuntur?
-              </p>
-</div>
+                <h2 class="display-3 pt-4">Our Work</h2>
+                <p class="mb-5">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Eligendi voluptatibus officia consequuntur?
+                </p>
+              </div>
               <div class="carousel-wrapper mb-5" data-aos="zoom-in">
                 <div
                   id="carouselExampleDark"
@@ -226,7 +231,9 @@
                 </div>
               </div>
 
-              <a href="public/gallery/gallery.html" class="btn btn-outline-primary btn-lg mb-5"
+              <a
+                href="public/gallery/gallery.html"
+                class="btn btn-outline-primary btn-lg mb-5"
                 >Check Our Gallery</a
               >
             </div>
@@ -238,9 +245,9 @@
       <section class="bg-light py-5" id="pricing">
         <div class="container text-center">
           <div data-aos="zoom-in-down">
-          <h2 class="display-3">Pricing</h2>
-          <p class="mb-5">Our Prices Depend on 2 factors: Size and Style</p>
-</div>
+            <h2 class="display-3">Pricing</h2>
+            <p class="mb-5">Our Prices Depend on 2 factors: Size and Style</p>
+          </div>
           <div class="card" data-aos="zoom-in">
             <img src="public/assests/card.png" class="card-img-top" alt="..." />
             <div class="card-body">
@@ -279,7 +286,7 @@
       <section id="reviews">
         <div class="container text-center mb-5">
           <div data-aos="fade-down">
-          <h2 class="display-3 py-4">What Our Customers Say</h2>
+            <h2 class="display-3 py-4">What Our Customers Say</h2>
           </div>
           <div class="row">
             <div class="col-sm-6" data-aos="flip-left">
@@ -436,9 +443,9 @@
       <section class="bg-light" id="form">
         <div class="container py-5">
           <div data-aos="zoom-in-down">
-          <h2 class="display-3 text-center">Order Your Portrait Now</h2>
-</div>
-          <form  data-aos="zoom-in">
+            <h2 class="display-3 text-center">Order Your Portrait Now</h2>
+          </div>
+          <form data-aos="zoom-in">
             <div class="mb-4">
               <label for="name" class="form-label fw-bold">Name:</label>
               <input
@@ -447,6 +454,8 @@
                 id="name"
                 aria-describedby="name"
                 placeholder="Enter your name"
+                minlength="3"
+                maxlength="30"
               />
             </div>
             <div class="mb-4">
@@ -468,6 +477,8 @@
                 class="form-control"
                 id="location"
                 placeholder="Enter your location"
+                minlength="3"
+                maxlength="50"
               />
             </div>
             <div id="email" class="form-text mb-4">
@@ -527,7 +538,10 @@
             >
           </div>
           <div class="footer-end mt-4 fw-bold">
-            <p>Copyrights &copy; 2021 - GH.Special Art</p>
+            <p>
+              Copyrights &copy; <span id="copyRightsDate"></span> - GH.Special
+              Art
+            </p>
           </div>
         </div>
       </footer>
@@ -542,5 +556,10 @@
       AOS.init();
     </script>
     <script src="public/js/script.js"></script>
+
+    <script>
+      const CRdate = document.getElementById("copyRightsDate");
+      CRdate.innerHTML = new Date().getFullYear();
+    </script>
   </body>
 </html>
