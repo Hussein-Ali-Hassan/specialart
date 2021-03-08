@@ -316,7 +316,13 @@ h1 {
   margin: 1rem 0;
 
   .testi-inner {
-    display: flex;
+    display: flex; 
+      .testi-img {
+      margin-right: 25px;
+      width: 70px;
+      height: 70px;
+      object-fit: cover;
+      border-radius: 50%; }
   }
 
   .testi-content {
