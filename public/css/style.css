@@ -5969,7 +5969,7 @@ h1, .h1 {
   #pricing .sizes-note {
     font-size: 0.6rem; }
   #pricing .toggle-container span {
-    font-size: .9rem; }
+    font-size: 0.9rem; }
   #pricing .total-price {
     padding: 0.3rem; }
     #pricing .total-price #total {
@@ -5987,7 +5987,7 @@ h1, .h1 {
   #pricing .sizes-note {
     font-size: 0.9rem; }
   #pricing .total-note {
-    font-size: .9rem;
+    font-size: 0.9rem;
     margin-left: -60px; } }
 
 .testi-wrapper {
@@ -6021,36 +6021,47 @@ form {
   form {
     max-width: 480px; } }
 
-.footer-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center; }
-  .footer-top img {
-    height: 28px; }
-  .footer-top i {
-    font-size: 1.4rem;
-    padding: 3px; }
-    .footer-top i:hover {
-      transform: scale(1.2); }
-  .footer-top .fa-facebook-square {
-    color: #0f92f3; }
-  .footer-top .fa-instagram-square {
-    color: #d64c60; }
-  .footer-top .fa-twitter-square {
-    color: #2786cf; }
-  .footer-top .fa-linkedin {
-    color: #0f67aa; }
-  .footer-top .fa-envelope {
-    color: #c76030; }
+.social i {
+  font-size: 2.2rem;
+  padding: 7px; }
+  .social i:hover {
+    transform: scale(1.2); }
+
+.social .fa-facebook-square {
+  color: #0f92f3; }
+
+.social .fa-instagram-square {
+  color: #d64c60; }
+
+.social .fa-twitter-square {
+  color: #2786cf; }
+
+.social .fa-linkedin {
+  color: #0f67aa; }
 
 @media screen and (min-width: 700px) {
-  .footer-top i {
-    font-size: 2.5rem;
-    padding: 10px; }
-  .footer-top img {
-    height: 35px; }
-  .footer-middle {
-    font-size: 1.2rem; }
-  .footer-end {
-    text-align: center;
-    font-size: 1.2rem; } }
+  .social i {
+    font-size: 2.7rem;
+    padding: 10px; } }
+
+footer i {
+  font-size: 1.65rem;
+  padding: 5px; }
+  footer i:hover {
+    transform: scale(1.2); }
+  footer i.fa-envelope {
+    color: #c76030; }
+  footer i.fa-map-marker-alt {
+    color: #3BC14A; }
+
+footer img {
+  height: 37px; }
+
+footer .copy-rights {
+  font-size: 1.1rem; }
+
+@media screen and (min-width: 700px) {
+  footer img {
+    height: 45px; }
+  footer .copy-rights {
+    font-size: 1.4rem; } }

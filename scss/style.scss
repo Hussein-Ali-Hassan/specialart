@@ -266,7 +266,7 @@ h1 {
     // checkboxe labels
     .toggle-container {
       span {
-        font-size: .9rem;
+        font-size: 0.9rem;
       }
     }
 
@@ -302,7 +302,7 @@ h1 {
     }
 
     .total-note {
-      font-size: .9rem;
+      font-size: 0.9rem;
       margin-left: -60px;
     }
   }
@@ -316,13 +316,14 @@ h1 {
   margin: 1rem 0;
 
   .testi-inner {
-    display: flex; 
-      .testi-img {
+    display: flex;
+    .testi-img {
       margin-right: 25px;
       width: 70px;
       height: 70px;
       object-fit: cover;
-      border-radius: 50%; }
+      border-radius: 50%;
+    }
   }
 
   .testi-content {
@@ -350,60 +351,70 @@ form {
   }
 }
 
-//footer
-.footer {
-  &-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    img {
-      height: 28px;
+// social
+.social {
+  i {
+    font-size: 2.2rem;
+    padding: 7px;
+    &:hover {
+      transform: scale(1.2);
     }
-
+  }
+  .fa-facebook-square {
+    color: #0f92f3;
+  }
+  .fa-instagram-square {
+    color: #d64c60;
+  }
+  .fa-twitter-square {
+    color: #2786cf;
+  }
+  .fa-linkedin {
+    color: #0f67aa;
+  }
+  
+}
+@media screen and (min-width: 700px) {
+  .social {
     i {
-      font-size: 1.4rem;
-      padding: 3px;
-      &:hover {
-        transform: scale(1.2);
-      }
-    }
-    .fa-facebook-square {
-      color: #0f92f3;
-    }
-    .fa-instagram-square {
-      color: #d64c60;
-    }
-    .fa-twitter-square {
-      color: #2786cf;
-    }
-    .fa-linkedin {
-      color: #0f67aa;
-    }
-    .fa-envelope {
-      color: #c76030;
+      font-size: 2.7rem;
+      padding: 10px;
     }
   }
 }
 
+//footer
+footer {
+  i {
+    font-size: 1.65rem;
+    padding: 5px;
+    &:hover {
+      transform: scale(1.2);
+    }
+    &.fa-envelope {
+    color: #c76030;
+  }
+  &.fa-map-marker-alt {
+    color: $success;
+  }
+  }
+  img {
+    height: 37px;
+  }
+
+  .copy-rights {
+    font-size: 1.1rem;
+  }
+}
+
 @media screen and (min-width: 700px) {
-  .footer {
-    &-top {
-      i {
-        font-size: 2.5rem;
-        padding: 10px;
-      }
-      img {
-        height: 35px;
-      }
+  footer {
+    img {
+      height: 45px;
     }
 
-    &-middle {
-      font-size: 1.2rem;
-    }
-
-    &-end {
-      text-align: center;
-      font-size: 1.2rem;
-    }
+    .copy-rights {
+    font-size: 1.4rem;
+  }
   }
 }
