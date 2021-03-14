@@ -372,7 +372,6 @@ form {
   .fa-linkedin {
     color: #0f67aa;
   }
-  
 }
 @media screen and (min-width: 700px) {
   .social {
@@ -392,11 +391,11 @@ footer {
       transform: scale(1.2);
     }
     &.fa-envelope {
-    color: #c76030;
-  }
-  &.fa-map-marker-alt {
-    color: $success;
-  }
+      color: #0f92f3;
+    }
+    &.fa-map-marker-alt {
+      color: #d64c60;
+    }
   }
   img {
     height: 37px;
@@ -414,7 +413,7 @@ footer {
     }
 
     .copy-rights {
-    font-size: 1.4rem;
-  }
+      font-size: 1.4rem;
+    }
   }
 }
