@@ -516,11 +516,12 @@
             data-aos="zoom-in"
           >
             <div class="mb-4">
-              <label for="name" class="form-label fw-bold">Name:</label>
+              <label class="form-label fw-bold">Name:</label>
               <input
                 type="text"
                 class="form-control"
                 id="name"
+                name="name"
                 aria-describedby="name"
                 placeholder="Enter your name"
                 minlength="3"
@@ -529,24 +530,24 @@
               />
             </div>
             <div class="mb-4">
-              <label for="email" class="form-label fw-bold"
-                >Email address:</label
-              >
+              <label class="form-label fw-bold">Email address:</label>
               <input
                 type="email"
                 class="form-control"
                 id="email"
+                name="email"
                 aria-describedby="email"
                 placeholder="Enter your email"
                 required
               />
             </div>
             <div>
-              <label for="location" class="form-label fw-bold">Location:</label>
+              <label class="form-label fw-bold">Location:</label>
               <input
                 type="text"
                 class="form-control"
                 id="location"
+                name="location"
                 placeholder="Enter your location"
                 minlength="3"
                 maxlength="50"
@@ -559,10 +560,11 @@
             </div>
 
             <div class="mb-3">
-              <label for="message" class="form-label fw-bold">Message:</label>
+              <label class="form-label fw-bold">Message:</label>
               <textarea
                 class="form-control"
                 id="message"
+                name="message"
                 placeholder="Feel free to tell us what you want (size,style..)"
                 rows="3"
                 required
