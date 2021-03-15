@@ -5991,24 +5991,24 @@ h1, .h1 {
     margin-left: -60px; } }
 
 .testi-wrapper {
-  max-width: 480px;
+  max-width: 500px;
   padding: 1rem;
   background-color: #EBF2F9;
   margin: 1rem 0; }
   .testi-wrapper .testi-inner {
     display: flex; }
-    .testi-wrapper .testi-inner .testi-img {
-      margin-right: 25px;
-      width: 70px;
-      height: 70px;
-      object-fit: cover;
-      border-radius: 50%; }
   .testi-wrapper .testi-content {
     text-align: left; }
     .testi-wrapper .testi-content-header {
       display: flex;
       justify-content: space-between;
       margin-bottom: 5px; }
+  .testi-wrapper .testi-img {
+    margin-right: 14px;
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 50%; }
 
 form {
   margin: 3rem auto;
@@ -6056,6 +6056,11 @@ footer i {
 
 footer img {
   height: 37px; }
+
+footer .footer-link {
+  width: fit-content; }
+  footer .footer-link:hover {
+    font-weight: bold; }
 
 footer .copy-rights {
   font-size: 1.1rem; }

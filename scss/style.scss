@@ -310,20 +310,13 @@ h1 {
 
 // Testimonials section
 .testi-wrapper {
-  max-width: 480px;
+  max-width: 500px;
   padding: 1rem;
   background-color: $light;
   margin: 1rem 0;
 
   .testi-inner {
     display: flex;
-    .testi-img {
-      margin-right: 25px;
-      width: 70px;
-      height: 70px;
-      object-fit: cover;
-      border-radius: 50%;
-    }
   }
 
   .testi-content {
@@ -333,6 +326,13 @@ h1 {
       justify-content: space-between;
       margin-bottom: 5px;
     }
+  }
+  .testi-img {
+    margin-right: 14px;
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 50%;
   }
 }
 
@@ -399,6 +399,14 @@ footer {
   }
   img {
     height: 37px;
+  }
+
+  .footer-link {
+    width: fit-content;
+
+    &:hover {
+      font-weight: bold;
+    }
   }
 
   .copy-rights {
