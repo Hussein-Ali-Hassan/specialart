@@ -7,7 +7,10 @@ body {
   font-family: "Open Sans", sans-serif;
   background-color: #fff;
 }
-
+::selection {
+  color: #fff;
+  background-color: $primary;
+}
 h1,
 h2,
 h3 {

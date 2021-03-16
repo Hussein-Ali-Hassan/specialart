@@ -5794,6 +5794,10 @@ body {
   font-family: "Open Sans", sans-serif;
   background-color: #fff; }
 
+::selection {
+  color: #fff;
+  background-color: #963484; }
+
 h1, .h1, h2, .h2, h3, .h3 {
   font-family: "Caveat", cursive; }
 
