@@ -5797,7 +5797,7 @@ textarea.form-control-lg {
 .gallery {
   width: 4000px; }
   .gallery img {
-    max-width: 310px;
+    max-width: 305px;
     object-fit: cover;
     margin: 4.7rem; }
 

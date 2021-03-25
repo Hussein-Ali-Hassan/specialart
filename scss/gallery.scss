@@ -1,4 +1,4 @@
-@import 'variables';
+@import "variables";
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
 // nav
@@ -13,13 +13,13 @@
 .gallery {
   width: 4000px;
   img {
-    max-width: 310px;
+    max-width: 305px;
     object-fit: cover;
     margin: 4.7rem;
   }
 }
 
-@media screen and (min-width: 900px){
+@media screen and (min-width: 900px) {
   .gallery {
     width: 100vw;
 
