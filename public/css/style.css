@@ -5856,13 +5856,24 @@ h1, .h1 {
 
 .about-pg {
   font-size: 1.4rem;
-  max-width: 380px;
+  max-width: 50ch;
   margin: 0 auto;
   text-align: center; }
+  .about-pg .pg-hook {
+    color: #963484;
+    font-size: 1.6rem; }
 
 @media screen and (min-width: 575px) {
   .about-pg {
-    text-align: left; } }
+    text-align: left; }
+  .img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .about-img {
+    max-width: 350px;
+    max-height: 350px;
+    object-fit: cover; } }
 
 .carousel-wrapper {
   max-width: 500px;
