@@ -96,7 +96,12 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link text-dark" href="#work">Our Work</a>
+              <a class="nav-link text-dark" href="public/gallery/gallery.html"
+                >Gallery</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#process">How It Works</a>
             </li>
             <li class="nav-item">
               <a class="nav-link text-dark" href="#pricing">Pricing</a>
@@ -112,9 +117,10 @@
     <!-- Home  -->
     <header id="home">
       <div class="container mt-4">
-        <h1 class="fw-bold">Lets Create Your Own Special Portrait</h1>
-        <p class="header-pg lead">
-          Receive your awesome ‘Portrait Art’ at your door in a matter of days
+        <h1 class="fw-bold">Transform Your Memory Into A Masterpiece</h1>
+        <p class="header-pg">
+          Are you looking for a unique gift for any occasion? Then, get a
+          special portrait
         </p>
         <a href="#form" class="btn btn-primary mt-3" role="button"
           >Order Yours Now</a
@@ -328,8 +334,74 @@
         </div>
       </section>
 
+      <!-- How it Works -->
+      <section id="process" class="bg-light py-5 text-center">
+        <div class="container">
+          <div data-aos="zoom-in-down">
+            <h2 class="display-3">How It Works</h2>
+          </div>
+          <div data-aos="zoom-in-down">
+            <p class="mb-5">Our Process For Creating The Perfect Portrait.</p>
+          </div>
+          <div class="process-wrapper">
+            <div class="flex-container">
+              <div class="flex-item" data-aos="zoom-in">
+                <img
+                  src="public/assests/process/1.webp"
+                  alt="icon"
+                  class="mb-3"
+                />
+                <h4>1. Select Your Size</h4>
+                <p>
+                  Choose a size & style to fit your budget: Small, Medium,
+                  Large, or a custom order.
+                </p>
+              </div>
+              <div class="flex-item" data-aos="zoom-in">
+                <img
+                  src="public/assests/process/2.svg"
+                  alt="icon"
+                  class="mb-3"
+                />
+                <h4>2. Send Your Request</h4>
+                <p>
+                  Fill out the form below with your address and your request.
+                  Feel free to express what you want.
+                </p>
+              </div>
+            </div>
+            <div class="flex-container">
+              <div class="flex-item" data-aos="zoom-in">
+                <img
+                  src="public/assests/process/3.webp"
+                  alt="icon"
+                  class="mb-3"
+                />
+                <h4>3. Review & Approve</h4>
+                <p>
+                  After a careful review of your request. We ask you for the
+                  photo and discuss the payment details.
+                </p>
+              </div>
+              <div class="flex-item" data-aos="zoom-in">
+                <img
+                  src="public/assests/process/4.webp"
+                  alt="icon"
+                  class="mb-3"
+                />
+                <h4>4. Enjoy Your Portrait</h4>
+                <p>
+                  Shipped to your doors in style in 1 - 2 weeks. Depending
+                  whether you are in Canada or USA.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- Pricing -->
-      <section class="bg-light py-5" id="pricing">
+      <section class="py-5" id="pricing">
         <div class="container text-center">
           <div data-aos="zoom-in-down">
             <h2 class="display-3">Pricing</h2>
@@ -353,7 +425,7 @@
                 <div class="size-box" id="3040">30 x 40 cm</div>
               </div>
               <small class="sizes-note text-muted pt-2 d-block"
-                >These sizes are our standards. But you can choose your own
+                >Choose from our 3 standard sizes or request a custom order.
               </small>
               <hr />
               <div class="toggle-container">
@@ -485,7 +557,7 @@
           <div data-aos="zoom-in-down ">
             <p class="mb-5 text-center">
               Once we recieve your request we will reach you and ask for the
-              image and discuss the payment method
+              photo and discuss the payment method.
             </p>
           </div>
           <form
@@ -544,7 +616,7 @@
                 class="form-control"
                 id="message"
                 name="message"
-                placeholder="Feel free to describe what you want (size,style..)"
+                placeholder="Please provide us with a clear description of the size, style, number of people to be drawn..."
                 rows="3"
                 required
               ></textarea>
