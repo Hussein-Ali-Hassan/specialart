@@ -5794,6 +5794,12 @@ textarea.form-control-lg {
   .navbar-toggler:focus {
     box-shadow: none; }
 
+.nav-item {
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.3s ease; }
+  .nav-item:hover {
+    border-color: #963484; }
+
 .gallery {
   width: 4000px; }
   .gallery img {
