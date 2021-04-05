@@ -1,6 +1,7 @@
 @import "variables";
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Open+Sans:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 
 html {
   scroll-behavior: smooth;
@@ -14,7 +15,9 @@ body {
   color: #fff;
   background-color: $primary;
 }
-h1,
+h1 {
+  font-family: "Playfair Display", serif;
+}
 h2,
 h3 {
   font-family: "Caveat", cursive;
@@ -42,7 +45,7 @@ h3 {
 
 // header section
 h1 {
-  font-size: 2.8rem;
+  font-size: 2.1rem;
   max-width: 380px;
   font-style: normal;
 }
@@ -54,7 +57,7 @@ h1 {
 // for too small screens
 @media screen and (max-width: 360px) {
   h1 {
-    font-size: 2.3rem;
+    font-size: 1.7rem;
   }
 
   .header-pg {
@@ -67,7 +70,7 @@ h1 {
   h1 {
     margin-top: 3rem;
     max-width: 1200px;
-    font-size: 3.4rem;
+    font-size: 3.2rem;
   }
 
   .header-pg {
