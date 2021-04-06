@@ -379,6 +379,12 @@ h1 {
 }
 
 // Testimonials section
+.testi-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .testi-wrapper {
   max-width: 500px;
   padding: 1rem;

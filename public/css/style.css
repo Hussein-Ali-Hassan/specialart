@@ -6046,6 +6046,12 @@ h1, .h1 {
     font-size: 0.9rem;
     margin-left: -60px; } }
 
+.testi-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
 .testi-wrapper {
   max-width: 500px;
   padding: 1rem;
