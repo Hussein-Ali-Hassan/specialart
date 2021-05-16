@@ -6087,7 +6087,8 @@ form {
 
 .social i {
   font-size: 2.2rem;
-  padding: 7px; }
+  padding: 7px;
+  transition: transform 0.3s ease; }
   .social i:hover {
     transform: scale(1.2); }
 
